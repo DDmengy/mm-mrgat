@@ -1,0 +1,6 @@
+# Candidate CPU stack based on the archived environment notes.
+# For GPU execution, use compatible platform-specific PyTorch and DGL builds.
+torch==1.12.1
+dgl==1.1.1
+numpy==1.24.3
+scikit-learn==1.2.2
