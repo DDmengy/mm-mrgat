@@ -22,4 +22,12 @@ This repository provides source links for upstream materials. Use the applicable
 | `data/circ_seq_embedding.npy` | A two-dimensional NumPy array with one row per circRNA in graph node-ID order |
 | `data/dis_sem_embedding.npy` | A two-dimensional NumPy array with one row per disease in graph node-ID order |
 
-The local archive contains a preprocessed graph and sparse similarity matrices, while the two node-feature arrays expected by the training script are absent from the inspected copy. The similarity matrices represent pairwise similarities. The optional feature arguments expect node-level arrays aligned to the chosen graph. The exact graph and feature versions used for the manuscript's main comparison remain to be confirmed.
+The local archive contains a preprocessed graph and sparse similarity matrices, while the two node-feature arrays expected by the training script are absent from the inspected copy. The similarity matrices represent pairwise similarities. The optional feature arguments expect node-level arrays aligned to the chosen graph. The authors confirmed that the archived `heterographs.bin` is the graph used for the manuscript's main experiments. The use and provenance of the two node-feature arrays in the reported runs remain to be verified.
+
+## Processed graph availability
+
+The [MM-MRGAT data repository](https://huggingface.co/datasets/liudded/mm-mrgat-data) is a private staging repository. The main-experiment graph remains in the authors' local archive while the terms for sharing its underlying data are verified.
+
+| Archived file | Bytes | SHA-256 |
+| --- | ---: | --- |
+| `heterographs.bin` | 1,697,071,150 | `07bae91dcbe94d2ba2ff382ba0ace17493e826c58ba79581f242d6db9f04bbe3` |
